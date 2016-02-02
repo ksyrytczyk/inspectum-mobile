@@ -66,14 +66,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	var MobileDetect = __webpack_require__(2);
 
 	var InspectumMobile = {
+
 	    isMobile: function (ua) {
-	        var md = new MobileDetect(ua || window.navigator.userAgent);
+	        var md = InspectumMobile.detect(ua);
 
 	        var isMobile = md.mobile();
 	        var isPhone = md.phone();
 	        var isTablet = md.tablet();
 
 	        return Boolean(isMobile || isPhone || isTablet);
+	    },
+
+	    detect: function(ua) {
+	        return new MobileDetect(ua || window.navigator.userAgent);
 	    }
 	};
 
