@@ -1,7 +1,7 @@
 {
-    "name": "inpsectum-mobile",
-    "version": "1.0.0",
-    "description": "One-method library: isMobile",
+    "name": "inspectum-mobile",
+    "version": "1.0.2",
+    "description": "Library helps you to determine if user is on mobile device",
     "dependencies": {
         "mobile-detect": "^1.3.1"
     },
